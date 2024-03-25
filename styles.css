@@ -1,0 +1,110 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+    background-image: url('Arka_olan.1.webp');
+    background-size: contain; /* Resmi ekran boyutuna sığacak şekilde ayarlar */
+    background-repeat:repeat;
+    background-position: center;
+    font-size: 16px; /* Varsayılan font boyutu */
+    line-height: 1.6;
+}
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 14px; /* Mobil cihazlarda font boyutu */
+    }
+}
+header {
+    background-color: #006400;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+main {
+    padding: 1rem;
+}
+section {
+    display: flex;
+    flex-wrap: wrap;   
+}
+
+img {
+    max-width: 90%;
+    height: auto;
+    padding: 10px;
+    margin: 10px;
+}
+article {
+    position: relative;
+    flex-grow: 1; /* Yeni ekle */
+    flex-basis: 48%; /* Üç fotoğrafın da eşit genişlikte olmasını sağlar */
+    max-width: 100%; 
+}
+
+article:last-child {
+    margin-right: 0;
+}
+
+.photo-info {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    z-index: 1;
+}
+
+img:hover + .photo-info {
+    display: block;
+}
+
+
+footer {
+    background-color: #1e7e34;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-links {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-social {
+    display: flex;
+}
+
+.footer-social a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 10px;
+}
+

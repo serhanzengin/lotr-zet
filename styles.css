@@ -3,7 +3,7 @@ body {
     margin: 20px;
     padding: 20px;
     box-sizing: border-box;
-    background-image: url('Arka_olan.1.webp');
+    background-image: url('karanlıkta yolculuk.jpeg');
     background-size: contain; /* Resmi ekran boyutuna sığacak şekilde ayarlar */
     background-repeat:repeat;
     background-position: center;
@@ -16,7 +16,7 @@ body {
     }
 }
 header {
-    background-color: #006400;
+    background-color: #000;
     color: #fff;
     text-align: center;
     padding: 1rem 0;
@@ -57,21 +57,30 @@ article:last-child {
     padding: 10px;
     text-align: center;
     z-index: 1;
+    
 }
 
 img:hover + .photo-info {
     display: block;
 }
 
+aside {
+    float: left; /* Sol tarafa yaslanacak */
+    width: 200px; /* Genişlik ayarlayabilirsiniz */
+    margin-right: 20px; /* Sağdan boşluk bırakmak için */
+    margin-top: -30px;
+}
 
 footer {
-    background-color: #1e7e34;
+    background-color: #000;
     color: #fff;
     text-align: center;
     padding: 1rem 0;
     position: fixed;
     bottom: 0;
     width: 100%;
+    
+    
 }
 
 .footer-content {
@@ -100,11 +109,14 @@ footer {
 
 .footer-social {
     display: flex;
+    justify-content: center; /* Sosyal medya ikonlarını yatayda ortalar */
+    
 }
 
 .footer-social a {
     color: #fff;
     text-decoration: none;
     margin-right: 10px;
+    margin-left: 20px;
 }
 

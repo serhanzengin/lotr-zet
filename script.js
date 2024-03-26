@@ -21,4 +21,15 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
+window.addEventListener('scroll', function() {
+    var footer = document.querySelector('footer');
+    var scrollPosition = window.scrollY;
+    var windowHeight = window.innerHeight;
+    var fullHeight = document.body.scrollHeight;
 
+    if (scrollPosition + windowHeight >= fullHeight) {
+        footer.style.bottom = '0'; // Footer'ı göster
+    } else {
+        footer.style.bottom = '-100px'; // Footer'ı gizle
+    }
+});

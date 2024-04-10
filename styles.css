@@ -12,9 +12,26 @@ body {
 }
 @media screen and (max-width: 768px) {
     body {
-        font-size: 14px; /* Mobil cihazlarda font boyutu */
+        font-size: 14px;
     }
+
+    section {
+        flex-direction: column;
+    }
+
+    article {
+        flex-basis: 100%;
+    }
+    .photo-info {
+        transform: translate(-50%, -50%) rotate(0); /* Yazıları yatay hale getirir */
+        width: 90%; /* Yazıların genişliğini ayarlar */
+    }
+    
 }
+
+
+
+
 header {
     background-color: #000;
     color: #fff;
@@ -119,4 +136,7 @@ footer {
     margin-right: 10px;
     margin-left: 20px;
 }
+
+
+
 
